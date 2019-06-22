@@ -1,0 +1,43 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/* Image */
+
+	.image {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&:before, &:after {
+			display: none !important;
+		}
+
+		img {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* Header */
+
+	#header {
+		background-image: url('../../images/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+
+		h1 {
+			color: _palette(accent2, fg-bold);
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		.icons {
+			a {
+				color: _palette(accent2, fg-bold);
+			}
+		}
+	}
