@@ -47,7 +47,7 @@ class Header extends React.Component {
                 </div>
                 <Footer />
                 <div id="bgLocation">
-                <p className="icon fas fa-map-marker"> Forest in Kent's Knole Park</p> 
+                <p className="icon fas fa-map-marker"> Forest in Kent's Knole Park -- photo by Me!</p> 
                 </div>
             </header>
         )

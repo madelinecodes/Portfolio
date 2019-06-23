@@ -14,18 +14,24 @@ class Gallery extends Component {
         if (!images) return;
 
         const gallery = images.map((obj, i) => {
+            const order = [
+                <a
+                    className="image fit thumb"
+                    href="https://madelinecodes.github.io/"
+                >
+                    <img src={obj.thumbnail} />
+                </a>,
+                <div>
+                    <h3>{obj.caption}</h3>
+                    <p>{obj.description}</p>
+                </div>
+            ];
+            if (i % 2 !== 0) {
+                order.reverse();
+            }
             return (
                 <article className="6u 12u$(xsmall) work-item" key={i}>
-                    <a
-                        className="image fit thumb"
-                        href= "https://madelinecodes.github.io/"
-                    >
-                        <img src={obj.thumbnail} />
-                    </a>
-                    <div>
-                        <h3>{obj.caption}</h3>
-                        <p>{obj.description}</p>
-                    </div>
+                    {order}
                 </article>
             );
         });

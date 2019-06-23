@@ -38,7 +38,7 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Interesting quip about how techy I am.</h2>
+                            <h2>Oh wow, thanks for visiting!</h2>
                         </header>
                         <div>
                             <p> I'm a self-taught developer with a B.A. in English and Creative Writing (with First Class Honors). </p>
