@@ -10,7 +10,6 @@ class Gallery extends Component {
     }
     renderGallery() {
         const { images } = this.props;
-        let width = window.screen.width;
 
         if (!images) return;
 
