@@ -17,7 +17,7 @@ class Gallery extends Component {
             const order = [
                 <a
                     className="image fit thumb"
-                    href="https://madelinecodes.github.io/"
+                    href= {obj.href}
                 >
                     <img src={obj.thumbnail} />
                 </a>,

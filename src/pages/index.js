@@ -9,9 +9,9 @@ import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', thumbnail: thumb01, caption: 'Average Site Colour', description: 'This crawls all the images on a website and returns the average RGB colour.' },
-    { id: '2', thumbnail: thumb02, caption: 'Plant Tracker', description: 'Hey this site uses Reactjs to track your watering/fertilizing schedule for your plants. Set reminders and view plant info.' },
-    { id: '3', thumbnail: thumb03, caption: 'Calorie Queen', description: 'This puppy right here will keep you slim! Set your own daily calorie goals and record your meals here.' },
+    { id: '1', thumbnail: thumb01, caption: 'Average Site Colour', description: 'This crawls all the images on a website and returns the average RGB colour.', href: 'https://average-site-color.glitch.me/' },
+    { id: '2', thumbnail: thumb02, caption: 'Plant Tracker', description: 'Hey this site uses Reactjs to track your watering/fertilizing schedule for your plants. Set reminders and view plant info.', href: 'https://madeline.codes/' },
+    { id: '3', thumbnail: thumb03, caption: 'Calorie Queen', description: 'This puppy right here will keep you slim! Set your own daily calorie goals and record your meals here.', href: 'https://calorie-queen.glitch.me/' },
 ];
 
 class HomeIndex extends React.Component {
@@ -56,10 +56,11 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h1>Recent Work</h1>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, thumbnail, caption, description }) => ({
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, thumbnail, caption, description, href }) => ({
                             thumbnail,
                             caption,
-                            description
+                            description,
+                            href
                         }))} />
                     </section>
 
