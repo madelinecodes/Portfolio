@@ -42,8 +42,8 @@ class Header extends React.Component {
                 <div className="inner">
                     <a href="#" className="image avatar"><img src={avatar} alt="" /></a>
                     <h1>Hey, I'm <strong>Madeline</strong>, welcome. <br />
-                        Have a browse and <br />
-                        get in <a href="madelinemhealey@gmail.com">touch</a>.</h1>
+                        I'm a developer and <br />cheese enthusiast <br />
+                        I also love getting <a href="madelinemhealey@gmail.com">email</a>.</h1>
                 </div>
                 <Footer />
                 <div id="bgLocation">

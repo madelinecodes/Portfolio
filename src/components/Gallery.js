@@ -10,6 +10,7 @@ class Gallery extends Component {
     }
     renderGallery() {
         const { images } = this.props;
+        let width = window.screen.width;
 
         if (!images) return;
 
@@ -21,9 +22,10 @@ class Gallery extends Component {
                 >
                     <img src={obj.thumbnail} />
                 </a>,
-                <div>
+                <div >
                     <h3>{obj.caption}</h3>
                     <p>{obj.description}</p>
+                    <span className="uses">{obj.uses}</span>
                 </div>
             ];
             if (i % 2 !== 0) {

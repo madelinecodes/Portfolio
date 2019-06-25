@@ -3,7 +3,7 @@
 @import "libs/mixins";
 @import "../css/font-awesome.min.css";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import "libs/skel";
 
 @include skel-breakpoints(
@@ -364,7 +364,7 @@ ul {
 
     li {
       display: inline-block;
-      padding: 0 .5em 0 .5em;
+      padding: 0 0.5em 0 0.5em;
     }
   }
 }
@@ -379,17 +379,20 @@ dl {
   padding: _size(element-margin);
   width: 100%;
   display: flex;
-
+  align-content: space-between;
+  
   .image {
     margin: 0;
     width: 50%;
     float: right;
+    height: 100%;
   }
 
   div {
     width: 50%;
     text-align: left;
     float: left;
+    height: 100%;
   }
   p {
     font-size: 1em;
@@ -398,12 +401,17 @@ dl {
   h3 {
     font-size: 1.5em;
   }
+  .uses {
+    margin-top: 2em;
+    font-family: _font(family-secondary);
+    font-size: .90em;
+  }
 }
 
 .work-item:nth-child(odd) {
   background: _palette(border);
- 
-   .image {
+
+  .image {
     margin: 0;
     width: 50%;
   }
@@ -424,10 +432,10 @@ dl {
 
 #two {
   > div {
-	text-align: center;
-	> .row {
-		margin: 0;
-	}
+    text-align: center;
+    > .row {
+      margin: 0;
+    }
   }
 }
 
@@ -465,8 +473,8 @@ dl {
 
   strong,
   b {
-	color: _palette(accent2, fg-bold);
-	// font-size: 1.40em;
+    color: _palette(accent2, fg-bold);
+    // font-size: 1.40em;
   }
 
   h2,
@@ -487,23 +495,21 @@ dl {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
     width: 12em;
   }
-
 }
 
-
 #bgLocation {
-	position: absolute;
-	top: 0;
-	left: 0;
-	text-align: left;
-	margin: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  margin: 1em;
 
-	> p {
-		margin: 0;
-    font-size: .75em;
+  > p {
+    margin: 0;
+    font-size: 0.75em;
     color: _palette(border2);
-	}
   }
+}
 
 /* Footer */
 
@@ -516,7 +522,7 @@ dl {
     .icon img {
       font-size: 40px;
       height: 40px;
-      color: #0072C6;
+      color: #0072c6;
       vertical-align: middle;
     }
   }
@@ -761,23 +767,32 @@ body.is-touch {
   }
 
   /* Work Items */
-  .work-item {
+  .work-item, .work-item:nth-child(odd) {
     display: initial;
     text-align: center;
     padding: 0;
+
     .image {
       width: 80%;
-      margin-bottom: 0;
-      margin-top: 1em;
+      margin: 10%;
     }
     div {
-      width: 100%;
-      margin: 0;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 10%;
       text-align: center;
     }
+    p {
+      margin-left: 0;
+    }
+  }
+
+  .work-item:nth-child(even) {
+      display: flex;
+      flex-direction: column-reverse;
   }
 }
-
 @media screen and (max-width: 480px) {
   .\36 u,
   .\36 u24,
