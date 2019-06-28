@@ -4,9 +4,9 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
+import thumb01 from '../assets/images/thumbs/01.png'
 import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
+import thumb03 from '../assets/images/thumbs/03.png'
 
 const DEFAULT_IMAGES = [
     { id: '1', 
