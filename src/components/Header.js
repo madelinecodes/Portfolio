@@ -41,14 +41,12 @@ class Header extends React.Component {
             <header id="header">
                 <div className="inner">
                     <a href="#" className="image avatar"><img src={avatar} alt="" /></a>
-                    <h1>Hey, I'm <strong>Madeline</strong>, welcome. <br />
-                        I'm a developer and <br />cheese enthusiast <br />
-                        I also love getting <a href="madelinemhealey@gmail.com">email</a>.</h1>
+                    <h1>Hi, I'm <strong>Madeline Healey</strong>. <br />
+                        I sling code, eat fancy cheese,<br/>
+                        and I also snapped these trees!
+                    </h1>
                 </div>
                 <Footer />
-                <div id="bgLocation">
-                <p className="icon fas fa-map-marker"> Forest in Kent's Knole Park -- photo by Me!</p> 
-                </div>
             </header>
         )
     }

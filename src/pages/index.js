@@ -5,28 +5,22 @@ import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/01.png'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.png'
+import thumb02 from '../assets/images/thumbs/02.png'
 
 const DEFAULT_IMAGES = [
     { id: '1', 
         thumbnail: thumb01, 
         caption: 'Average Site Colour', 
-        description: 'This crawls all the images on a website and returns the average RGB colour.', 
+        description: 'Crawls a website for all images and calculates total average color! ', 
         uses: '{Python, Javascript, NodeJs, Pillow}', 
         href: 'https://average-site-color.glitch.me/' },
     { id: '2', 
         thumbnail: thumb02, 
-        caption: 'Plant Tracker', 
-        description: 'Hey this site uses Reactjs to track your watering/fertilizing schedule for your plants. Set reminders and view plant info.', 
-        uses: '{Javascript, React}', 
-        href: 'https://madeline.codes/' },
-    { id: '3', 
-        thumbnail: thumb03, 
         caption: 'Calorie Queen', 
-        description: 'This puppy right here will keep you slim! Set your own daily calorie goals and record your meals here.', 
+        description: 'Calorie tracking CRUD app! ', 
         uses: '{Javascript, SQLite, Express}', 
-        href: 'https://calorie-queen.glitch.me/' },
+        href: 'https://calorie-queen.glitch.me/'
+     }
 ];
 
 class HomeIndex extends React.Component {
@@ -50,24 +44,23 @@ class HomeIndex extends React.Component {
                 </Helmet>
                 <div id="main">
                     <section id="one">
-                        <header className="major">
-                            <h2>Oh wow, thanks for visiting!</h2>
-                        </header>
+                        {/* <header className="major"></header> */}
                         <div>
-                            <p> I'm a self-taught developer with a B.A. in English and Creative Writing (with First Class Honors). </p>
+                            <p> I'm a self-taught web developer with a B.A. in English and Creative Writing (with First Class Honors). </p>
                             <p> I love building things! If I get to build them with JavaScript or Python then even better! </p>
-                            <p> You may have met me at local tech meetups such as <a
-                                href="https://www.womenwhocode.com/edinburgh">Women Who Code</a>, <a
-                                    href="https://www.pyladies.com/">Pyladies</a>, or <a
-                                        href="https://www.meetup.com/Edinburgh-Women-in-Technology-Meetup/">Women in Technology</a>.</p>
-                            <p>I was born in Brooklyn, New York and raised in Dallas, Texas. I spent half a decade in London and
-                            recently moved up to Edinburgh.</p>
-                            <p> <strong>I'm currently on the search for a team that has a Madeline-shaped hole!</strong></p>
+                            <p> You may have met me at a tech meetup such as:</p>
+                            <ul>
+                                <li><a href="https://www.womenwhocode.com/">Women Who Code</a></li>
+                                <li><a href="https://www.pyladies.com/">Pyladies</a></li>
+                                <li><a href="https://www.meetup.com/Edinburgh-Women-in-Technology-Meetup/">Women in Technology</a></li>
+                            </ul>
+                            <p>I was born in Brooklyn, NY and raised in Dallas, TX. I've been in London for half a decade.</p>
+                            <p>I'm currently on the search for a team that has a Madeline-shaped hole!</p>
                         </div>
                     </section>
 
                     <section id="two">
-                        <h1>Recent Work</h1>
+                        <h1>Projects</h1>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, thumbnail, caption, description, href, uses }) => ({
                             thumbnail,

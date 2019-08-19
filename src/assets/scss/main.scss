@@ -59,7 +59,7 @@ body {
 }
 
 body {
-  color: _palette(fg);
+  color: _palette(fg-bold);
   font-family: _font(family);
   font-size: 16pt;
   font-weight: _font(weight);
@@ -524,6 +524,7 @@ dl {
       height: 40px;
       color: #0072c6;
       vertical-align: middle;
+
     }
   }
 }
