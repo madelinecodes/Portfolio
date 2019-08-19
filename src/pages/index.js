@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/01.png'
 import thumb02 from '../assets/images/thumbs/02.png'
+import thumb03 from '../assets/images/thumbs/03.png'
 
 const DEFAULT_IMAGES = [
     { id: '1', 
@@ -20,6 +21,13 @@ const DEFAULT_IMAGES = [
         description: 'Calorie tracking CRUD app! ', 
         uses: '{Javascript, SQLite, Express}', 
         href: 'https://calorie-queen.glitch.me/'
+     },
+     { id: '3', 
+        thumbnail: thumb03, 
+        caption: 'Portfolio', 
+        description: "This is it. You're seein' it buddy. ", 
+        uses: '{React, Gatsby}', 
+        href: 'https://madeline.codes/'
      }
 ];
 
