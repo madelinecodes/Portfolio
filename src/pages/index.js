@@ -7,26 +7,34 @@ import Gallery from '../components/Gallery'
 import thumb01 from '../assets/images/thumbs/01.png'
 import thumb02 from '../assets/images/thumbs/02.png'
 import thumb03 from '../assets/images/thumbs/03.png'
+import thumb04 from '../assets/images/thumbs/04.png'
 
 const DEFAULT_IMAGES = [
     { id: '1', 
         thumbnail: thumb01, 
         caption: 'Average Site Colour', 
         description: 'Crawls a website for all images and calculates total average color! ', 
-        uses: '{Python, Javascript, NodeJs, Pillow}', 
+        uses: '{Python, Javascript, NodeJs, Pillow, HTML, CSS}', 
         href: 'https://average-site-color.glitch.me/' },
     { id: '2', 
         thumbnail: thumb02, 
         caption: 'Calorie Queen', 
         description: 'Calorie tracking CRUD app! ', 
-        uses: '{Javascript, SQLite, Express}', 
+        uses: '{Javascript, SQLite, Express, HTML, CSS}', 
         href: 'https://calorie-queen.glitch.me/'
      },
      { id: '3', 
         thumbnail: thumb03, 
+        caption: 'Speak To My Husband', 
+        description: "Submit messages to a Raspberry Pi and have them read aloud on my husbands office sound system. ", 
+        uses: '{Express, lowdb, NodeJS, HTML, CSS, Javascript, Python}', 
+        href: 'https://madeline.codes/'
+     },
+     { id: '4', 
+        thumbnail: thumb04, 
         caption: 'Portfolio', 
         description: "This is it. You're seein' it buddy. ", 
-        uses: '{React, Gatsby}', 
+        uses: '{React, Gatsby, HTML, CSS, SCSS, Javascript}', 
         href: 'https://madeline.codes/'
      }
 ];
