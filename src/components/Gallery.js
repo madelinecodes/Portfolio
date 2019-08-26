@@ -25,6 +25,7 @@ class Gallery extends Component {
                     <h3>{obj.caption}</h3>
                     <p>{obj.description}</p>
                     <span className="uses">{obj.uses}</span>
+                    <a className="github" href={obj.github}>Github</a>
                 </div>
             ];
             if (i % 2 !== 0) {

@@ -406,6 +406,10 @@ dl {
     font-family: _font(family-secondary);
     font-size: .90em;
   }
+  .github {
+    display: block;
+    border-bottom: none;
+  }
 }
 
 .work-item:nth-child(odd) {
