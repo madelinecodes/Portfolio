@@ -76,7 +76,7 @@ class HomeIndex extends React.Component {
                                 <li><a href="https://www.meetup.com/Edinburgh-Women-in-Technology-Meetup/">Women in Technology</a></li>
                             </ul>
                             <p>I was born in Brooklyn, NY and raised in Dallas, TX. I've been in London for half a decade.</p>
-                            <p>I'm currently on the search for a team that has a Madeline-shaped hole!</p>
+                            <p>I'm currently working as a full-stack engineer and not seeking recruitment elsewhere.</p>
                         </div>
                     </section>
 
