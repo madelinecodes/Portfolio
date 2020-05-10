@@ -1,8 +1,6 @@
 # My Portfolio
 
-I used a Gatsby/React starter for my portfolio.
-
-There's a Netlify webhook setup and changes are deployed live to https://madeline.codes/
+I used a Gatsby/React starter for this portfolio.
 
 ## Installation
 
